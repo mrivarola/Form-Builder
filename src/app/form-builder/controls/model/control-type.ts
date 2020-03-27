@@ -1,4 +1,9 @@
 export enum ControlType {
     button,
-    textbox
+    textbox,
+    checkboxGroup,
+    date,
+    number,
+    radioGroup,
+    select
 }

@@ -1,15 +1,15 @@
 import { Control } from "./control";
 import { ControlType } from "./control-type";
 
-export class Textbox extends Control {
+export class CheckboxGroup extends Control {
 
     constructor() {
         super();
-        this.label = "Cuadro de texto";
+        this.label = "Grupo de checks";
     }
 
     public getType(): ControlType {
-        return ControlType.textbox;
+        return ControlType.checkboxGroup;
     }
 
 }

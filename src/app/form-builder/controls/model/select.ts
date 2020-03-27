@@ -1,15 +1,15 @@
 import { Control } from "./control";
 import { ControlType } from "./control-type";
 
-export class Textbox extends Control {
+export class Select extends Control {
 
     constructor() {
         super();
-        this.label = "Cuadro de texto";
+        this.label = "Lista desplegable";
     }
 
     public getType(): ControlType {
-        return ControlType.textbox;
+        return ControlType.select;
     }
 
 }
