@@ -11,16 +11,30 @@ import { Textbox } from './model/textbox';
 @Component({
   selector: "controls",
   template: `
-        <div>
+        <div class="controls-group">
             <ul>
                 <li *ngFor="let control of controls">{{ control.label }}</li>
             </ul>
         </div>
   `,
   styles: [`
+        .controls-group {
+            position: relative;
+            float: right;
+            margin: 0;
+            padding: 0;
+            width: 26%;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
         li {
-            margin: 12px;
-            padding: 15px 25px;
+            margin: 20px;
+            padding: 5px 10px;
+            font-family: 'Myriad Pro',Calibri,Helvetica,Arial,sans-serif;
             font-size: 15px;
             cursor: move;
             text-align: right;
