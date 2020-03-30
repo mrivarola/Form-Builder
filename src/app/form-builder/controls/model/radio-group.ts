@@ -9,7 +9,7 @@ export class RadioGroup extends Control {
     }
 
     public getType(): ControlType {
-        return ControlType.textbox;
+        return ControlType.radioGroup;
     }
 
 }

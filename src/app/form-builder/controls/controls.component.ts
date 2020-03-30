@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 import { Control } from "./model/control";
-import { Button } from './model/button';
-import { CheckboxGroup } from './model/checkbox-group';
-import { Date } from './model/date';
-import { Number } from './model/number';
-import { RadioGroup } from './model/radio-group';
-import { Select } from './model/select';
-import { Textbox } from './model/textbox';
+import { Button } from "./model/button";
+import { CheckboxGroup } from "./model/checkbox-group";
+import { Date } from "./model/date";
+import { Number } from "./model/number";
+import { RadioGroup } from "./model/radio-group";
+import { Select } from "./model/select";
+import { Textbox } from "./model/textbox";
 
 @Component({
   selector: "controls",
