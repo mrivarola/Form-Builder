@@ -5,7 +5,7 @@ export class Date extends Control {
 
     constructor() {
         super();
-        this.label = "Fecha";
+        this.label = "_datelabel";
     }
 
     public getType(): ControlType {
