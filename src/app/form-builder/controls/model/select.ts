@@ -5,7 +5,7 @@ export class Select extends Control {
 
     constructor() {
         super();
-        this.label = "Lista desplegable";
+        this.label = "_selectlabel";
     }
 
     public getType(): ControlType {

@@ -5,7 +5,7 @@ export class RadioGroup extends Control {
 
     constructor() {
         super();
-        this.label = "Grupo de radios";
+        this.label = "_radiogrouplabel";
     }
 
     public getType(): ControlType {

@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Control } from "./model/control";
 import { Button } from "./model/button";
 import { CheckboxGroup } from "./model/checkbox-group";
@@ -13,7 +13,7 @@ import { Textbox } from "./model/textbox";
   template: `
         <div class="controls-group">
             <ul>
-                <li *ngFor="let control of controls">{{ control.label }}</li>
+                <li *ngFor="let control of controls">{{ control.label | translatorPipe }}</li>
             </ul>
         </div>
   `,
@@ -54,8 +54,10 @@ import { Textbox } from "./model/textbox";
             box-shadow: 0 5px #666;
             transform: translateY(4px);
         }
-  `]
+  `],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
+
 export class ControlsComponent {
     private getControlsArray(): Array<Control> {
         let controls: Array<Control> = [];

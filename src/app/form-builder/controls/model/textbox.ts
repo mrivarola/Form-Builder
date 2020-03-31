@@ -5,7 +5,7 @@ export class Textbox extends Control {
 
     constructor() {
         super();
-        this.label = "Cuadro de texto";
+        this.label = "_textboxlabel";
     }
 
     public getType(): ControlType {

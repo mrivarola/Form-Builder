@@ -5,7 +5,7 @@ export class CheckboxGroup extends Control {
 
     constructor() {
         super();
-        this.label = "Grupo de checks";
+        this.label = "_checkboxlabel";
     }
 
     public getType(): ControlType {
