@@ -5,11 +5,10 @@ export class Button extends Control {
 
     constructor() {
         super();
-        this.label = "_buttonLabel";
+        this.label = "_buttonlabel";
     }
 
     public getType(): ControlType {
         return ControlType.button;
     }
-
 }
