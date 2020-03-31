@@ -20,6 +20,10 @@ export class TranslatorService {
     }
 
     public translate(value: string): string {
+        if (!value) {
+            return "";
+        }
+        
         let values = value.split(" ");
         let result = new Array<string>();
         values.forEach(v => {

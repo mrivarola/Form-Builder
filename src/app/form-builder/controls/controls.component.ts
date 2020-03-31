@@ -13,7 +13,7 @@ import { Textbox } from "./model/textbox";
   template: `
         <div class="controls-group">
             <ul>
-                <li *ngFor="let control of controls">{{ control.label | translatorPipe }}</li>
+                <li *ngFor="let control of controls">{{ (control.label$ | async) | translatorPipe }}</li>
             </ul>
         </div>
   `,
@@ -72,7 +72,6 @@ export class ControlsComponent {
     }
     
     public controls: Array<Control>
-
 
     constructor() {
         this.controls = this.getControlsArray();
