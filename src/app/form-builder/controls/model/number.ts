@@ -5,7 +5,7 @@ export class Number extends Control {
 
     constructor() {
         super();
-        this.label = "_numericlabel";
+        this.label.next("_numericlabel");
     }
 
     public getType(): ControlType {

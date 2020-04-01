@@ -5,7 +5,7 @@ export class Button extends Control {
 
     constructor() {
         super();
-        this.label = "_buttonlabel";
+        this.label.next("_buttonlabel");
     }
 
     public getType(): ControlType {

@@ -5,7 +5,7 @@ export class Select extends Control {
 
     constructor() {
         super();
-        this.label = "_selectlabel";
+        this.label.next("_selectlabel");
     }
 
     public getType(): ControlType {
